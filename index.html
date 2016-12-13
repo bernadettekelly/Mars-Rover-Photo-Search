@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="main.css">
+<head>
+	<title>Mars Rover Photo Search</title>
+</head>
+<body>
+<header>Photos of Mars</header>
+<main>
+	<form id="photo-search"><form action="#" method="post"> 
+		<section class="dropdown rover">
+			<label for="select-rover"></label>
+			<input type="text" name="select-rover" id="rover-choice">
+			<button type="button" class="select">
+			<span class="button-label">Select Rover</span></button>
+				<div class="dropdown-content">
+					<button type="button" class="button1">
+                	<span class="button-label">Curiosity</span></button>
+					<button type="button" class="button2">
+					<span class="button-label">Spirit</span></button>
+					<button type="button" class="button3">
+					<span class="button-label">Opportunity</span></button
+			    </div>
+		</section>
+        <section class="sol">
+			<label for="sol-entry">Enter Sol</label>
+			<input type="text" name="sol-entry" id="sol-number" placeholder="Ex: 50">
+			<button type="submit">Search</button>
+		</section>
+	</form>
+<div class="search-results">
+
+</div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

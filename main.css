@@ -1,0 +1,43 @@
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	padding: 12px 16px;
+	border: solid black 1px;
+	padding: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 24px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-family: 'Play', sans-serif;
+}
+
+.sol-number {
+	margin-left: 20px;
+}
+
+main {
+	text-align: center;
+}
+
+.rover {
+    margin-right: 20px;
+}
+
+section {
+	display: inline-block;
+}
