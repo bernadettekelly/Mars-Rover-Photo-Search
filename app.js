@@ -7,37 +7,39 @@ function getDataFromApi (where, solValue, callback) {
 	if(where == 'Curiosity'){
 		url = curiosity_URL;
 	}
+	if (where == 'Spirit'){
+		url = spirit_URL;
+	}
+	if (where = 'opportunity'){
+		url = opportunity_URL;
+	}
 
 	var query = {
 		sol: solValue,
 		//camera: ,
 		page: 1,
 		api_key: '4zeVFAMYIfMZnLUhKGUFmjRv4WpDD7N84PBfVcPs',
-		//q: 'searchTerm'
-		//Do I need a key/value pair to get the sols enetered?
-		//I'm receiving an error message that my api key is not entered
 	}
 	$.getJSON(url, query, callback);
 }
 
 function showSearchResults(data) {
 	var result = '';
-	console.log(data.photos);
-	//if (data.search) {
-	//	data.search.forEach(function(item) {
-  //          result += '<p>' + item + '</p>'
-  //					result += '<img src="' + item.img_src + '"/>' 
-	//	});
-	//}
-	//else {
-	//	result += '<p>No results found</p>';
-	//}
-	//$('.search-results').html(result);
+	if(data.photos) {
+		data.photos.forEach(function(item) {
+  				result += '<img src="' + item.img_src + '"/>' 
+		});
+	}
+	else {
+		result += '<p>No results found</p>';
+	}
+	$('.search-results').html(result);
 }
 
 $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 	e.preventDefault();
 	$('#rover-choice').val( $(e.currentTarget).text().trim() );
+    //$('#camera.choice').val( $(e.currentTarget).text().trim() );
 });
 
 function submitForm() {
@@ -45,6 +47,7 @@ function submitForm() {
 		event.preventDefault();
 		var where = $('#rover-choice').val();
 		var solValue = $('#sol-number').val();
+		//var camera = $('#camera-choice').val();
 		getDataFromApi(where, solValue, showSearchResults);
 	});
 }
