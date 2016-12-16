@@ -5,7 +5,7 @@
 	<title>Mars Rover Photo Search</title>
 </head>
 <body>
-<header>Photos of Mars</header>
+<header><h1>Mars in Pictures</h1></header>
 <main>
 	<form id="photo-search"><form action="#" method="post"> 
 		<section class="dropdown rover">
@@ -23,30 +23,23 @@
 			    </div>
 		</section>
 		<section class="dropdown camera">
-			<label for="selct-camera"></label>
-			<input type="text" name="select-camera" id="camera-choice">
-			<button type="buton" class="select">
-			<span class="button-label">Select Camera</span></button>
-				<div class="dropdown-content2">
-					<button type="button" class="button4">
-					<span class="button-label">Front Hazard Avoidance Camera</span></button>
-					<button type="button" class="button5">
-					<span class="button-label">Rear Hazard Avoidance Camera</span></button>
-					<button type="button" class="button6">
-					<span class="button-label">Mast Camera</span></button>
-					<button type="button" class="button7">
-					<span class="button-label">Chemistry and Camera Complex</span></button>
-					<button type="button" class="button8">
-					<span class="button-label">Mars Hand Lens Imager</span></button>
-					<button type="button" class="button9">
-					<span class="button-label">Mars Descent Imager</span></button>
-					<button type="button" class="button10">
-					<span class="button-label">Navigation Camera</span></button>
-					<button type="button" class="button11">
-					<span class="button-label">Panoramic Camera</span></button>
-					<button type="button" class="button12">
-					<span class="button-label">Miniature Thermal Emission Spectrometer</span></button>
-				</div>
+			<span class="camera-dropdown">
+				<label for="select-camera"></label>
+			    <input type="text" name="select-camera" id="camera-choice">
+			    <button type="button" class="select">
+			    <select class="camera-dropdown">
+					<option selected="selected" value>Select Camera</option>
+					<option value="FHAZ" class="button5">Front Hazard Avoidance Camera</option>
+					<option value="RHAZ" class="button6">Rear Hazard Avoidance Camera</option>
+					<option value="MAST" class=button7>Mast Camera</option>
+					<option value="CHEMCAM" class="button8">Chemistry and Camera Complex</option>
+					<option value="MAHLI" class="button9">Mars Hand Lens Imager</option>
+					<option value="MARDI" class="button10">Mars Descent Imager</option>
+					<option value="NAVCAM" class="button11">Navigation Camera</option>
+					<option value="PANCAM" class="button12">Panoramic Camera</option>
+					<option value="MINITES" class="button13">Miniature Thermal Emission Spectrometer</option>
+				</select>
+			</span>
 		</section>
         <section class="sol">
 			<label for="sol-entry">Enter Sol</label>

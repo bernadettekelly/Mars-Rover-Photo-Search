@@ -36,12 +36,52 @@ function showSearchResults(data) {
 	$('.search-results').html(result);
 }
 
+$('.button1').click(function() {
+	$('.button12').hide();
+});
+
+$('.button1').click(function() {
+	$('.button13').hide();
+});
+
+$('.button2').click(function() {
+	$('.button6').hide();
+});
+
+$('.button2').click(function() {
+	$('.button7').hide();
+});
+
+$('.button2').click(function() {
+	$('.button8').hide();
+});
+
+$('.button2').click(function() {
+	$('.button9').hide();
+});
+
+$('.button3').click(function() {
+	$('.button6').hide();
+});
+
+$('.button3').click(function() {
+	$('.button7').hide();
+});
+
+$('.button3').click(function() {
+	$('.button8').hide();
+});
+
+$('.button3').click(function() {
+	$('.button9').hide();
+});
+
 $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 	e.preventDefault();
 	$('#rover-choice').val( $(e.currentTarget).text().trim() );
 });
 
-$('#photo-search .dropdown-content2 button[type="button"]').click(function(e) {
+$('#photo-search .camera-dropdown button[type="button"]').click(function(e) {
 	e.preventDefault();
 	$('#camera-choice').val( $(e.currentTarget).text().trim() );
 });
