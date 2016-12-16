@@ -3,7 +3,7 @@
 	display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content, .dropdown-content2 {
 	display: none;
 	position: absolute;
 	background-color: white;
@@ -14,6 +14,10 @@
 }
 
 .dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropdown-content2 {
 	display: block;
 }
 
@@ -43,4 +47,20 @@ main {
 }
 section {
 	display: inline-block;
+}
+
+.search-results {
+	margin-top: 40px;
+}
+
+.select {
+	font-size: 14px;
+}
+
+.submit {
+	font-size: 14px;
+}
+
+#rover-choice, #camera-choice, #sol-number {
+	font-size: 14px;
 }

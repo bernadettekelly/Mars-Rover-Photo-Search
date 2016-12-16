@@ -2,7 +2,7 @@ var curiosity_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/ph
 var spirit_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos";
 var opportunity_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos";
 
-function getDataFromApi (where, solValue, callback) {
+function getDataFromApi (where, solValue, camera, callback) {
 	var url = curiosity_URL;
 	if(where == 'Curiosity'){
 		url = curiosity_URL;
@@ -39,7 +39,11 @@ function showSearchResults(data) {
 $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 	e.preventDefault();
 	$('#rover-choice').val( $(e.currentTarget).text().trim() );
-    //$('#camera.choice').val( $(e.currentTarget).text().trim() );
+});
+
+$('#photo-search .dropdown-content2 button[type="button"]').click(function(e) {
+	e.preventDefault();
+	$('#camera-choice').val( $(e.currentTarget).text().trim() );
 });
 
 function submitForm() {
@@ -47,8 +51,8 @@ function submitForm() {
 		event.preventDefault();
 		var where = $('#rover-choice').val();
 		var solValue = $('#sol-number').val();
-		//var camera = $('#camera-choice').val();
-		getDataFromApi(where, solValue, showSearchResults);
+		var camera = $('#camera-choice').val();
+		getDataFromApi(where, solValue, camera, showSearchResults);
 	});
 }
 $(document).ready(function(){submitForm()});
