@@ -10,13 +10,16 @@ header {
 
 h1 {
 	padding-top: 20px;
-	font-size: 26px;
+	font-size: 30px;
 	font-family: 'Orbitron', sans-serif;
+	margin: 0;
+	padding: 30px;
 }
 
 .dropdown {
 	position: relative;
 	display: inline-block;
+	margin-bottom: 30px;
 }
 
 .dropdown-content {
@@ -81,9 +84,10 @@ section {
 	font-size: 14px;
 }
 
-.tip {
+.fact {
+	margin-top: 16px;
 	width: 130px;
-	height: 70px;
+	height: 100px;
 	border: solid black 1px;
 	border-radius: 5px;
 	font-size: 14px;

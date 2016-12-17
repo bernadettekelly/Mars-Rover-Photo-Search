@@ -53,6 +53,13 @@ $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 			$('#camera-choice option[value="MAHLI"]').hide();
 			$('#camera-choice option[value="MARDI"]').hide();
 			break;
+		case 'Spirit':
+			$('#camera-choice option').show();
+			$('#camera-choice option[value="MAST"]').hide();
+			$('#camera-choice option[value="CHEMCAM"]').hide();
+			$('#camera-choice option[value="MAHLI"]').hide();
+			$('#camera-choice option[value="MARDI"]').hide();
+			break;
 	}
 });
 
