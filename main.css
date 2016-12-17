@@ -79,3 +79,23 @@ section {
 #rover-choice, #camera-choice, #sol-number {
 	font-size: 14px;
 }
+
+.tip {
+	width: 130px;
+	height: 70px;
+	border: solid black 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+ul {
+	list-style: none;
+	padding: 2px;
+	margin-top: 7px;
+}
+
+.sol {
+	display: inline-block;
+}
+
