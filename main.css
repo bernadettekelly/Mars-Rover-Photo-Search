@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 form {
 	background-color: #A9A9A9;
 }
@@ -10,7 +11,7 @@ header {
 h1 {
 	padding-top: 20px;
 	font-size: 26px;
-	font-family: 'Armata', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .dropdown {
@@ -18,7 +19,7 @@ h1 {
 	display: inline-block;
 }
 
-.dropdown-content, select {
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: white;
@@ -32,7 +33,7 @@ h1 {
 	display: block;
 }
 
-.dropdown:hover .camera-dropdown {
+.camera-dropdown {
 	display: block;
 }
 

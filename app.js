@@ -16,7 +16,7 @@ function getDataFromApi (where, solValue, camera, callback) {
 
 	var query = {
 		sol: solValue,
-		//camera: ,
+		camera: camera,
 		page: 1,
 		api_key: '4zeVFAMYIfMZnLUhKGUFmjRv4WpDD7N84PBfVcPs',
 	}
@@ -42,8 +42,16 @@ $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 	$('#rover-choice').val( rover );
 	switch(rover){
 		case 'Curiosity':
-			$('#camera-choice option').hide();
-			$('#camera-choice option[value="FHAZ"]').show();
+			$('#camera-choice option').show();
+			$('#camera-choice option[value="PANCAM"]').hide();
+			$('#camera-choice option[value="MINITES"]').hide();
+			break;
+		case 'Opportunity':
+		    $('#camera-choice option').show();
+			$('#camera-choice option[value="MAST"]').hide();
+			$('#camera-choice option[value="CHEMCAM"]').hide();
+			$('#camera-choice option[value="MAHLI"]').hide();
+			$('#camera-choice option[value="MARDI"]').hide();
 			break;
 	}
 });
