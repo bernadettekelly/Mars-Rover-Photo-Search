@@ -36,55 +36,22 @@ function showSearchResults(data) {
 	$('.search-results').html(result);
 }
 
-$('.button1').click(function() {
-	$('.button12').hide();
-});
-
-$('.button1').click(function() {
-	$('.button13').hide();
-});
-
-$('.button2').click(function() {
-	$('.button6').hide();
-});
-
-$('.button2').click(function() {
-	$('.button7').hide();
-});
-
-$('.button2').click(function() {
-	$('.button8').hide();
-});
-
-$('.button2').click(function() {
-	$('.button9').hide();
-});
-
-$('.button3').click(function() {
-	$('.button6').hide();
-});
-
-$('.button3').click(function() {
-	$('.button7').hide();
-});
-
-$('.button3').click(function() {
-	$('.button8').hide();
-});
-
-$('.button3').click(function() {
-	$('.button9').hide();
-});
-
 $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 	e.preventDefault();
-	$('#rover-choice').val( $(e.currentTarget).text().trim() );
+	var rover = $(e.currentTarget).text().trim();
+	$('#rover-choice').val( rover );
+	switch(rover){
+		case 'Curiosity':
+			$('#camera-choice option').hide();
+			$('#camera-choice option[value="FHAZ"]').show();
+			break;
+	}
 });
 
-$('#photo-search .camera-dropdown button[type="button"]').click(function(e) {
-	e.preventDefault();
-	$('#camera-choice').val( $(e.currentTarget).text().trim() );
-});
+//$('#photo-search .camera-dropdown button[type="button"]').click(function(e) {
+//	e.preventDefault();
+//	$('#camera-choice').val( $(e.currentTarget).text().trim() );
+//});
 
 function submitForm() {
 	$('#photo-search').submit(function(e) {
