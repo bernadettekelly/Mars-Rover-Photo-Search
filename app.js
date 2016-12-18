@@ -31,7 +31,7 @@ function showSearchResults(data) {
 		});
 	}
 	else {
-		result += '<p>No results found</p>';
+		result = '<p>No results found</p>';
 	}
 	$('.search-results').html(result);
 }
@@ -62,11 +62,6 @@ $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 			break;
 	}
 });
-
-//$('#photo-search .camera-dropdown button[type="button"]').click(function(e) {
-//	e.preventDefault();
-//	$('#camera-choice').val( $(e.currentTarget).text().trim() );
-//});
 
 function submitForm() {
 	$('#photo-search').submit(function(e) {
