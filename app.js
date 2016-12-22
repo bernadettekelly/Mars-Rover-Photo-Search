@@ -31,7 +31,7 @@ function showSearchResults(data) {
 		});
 	}
 	else {
-		result += '<p>No results found</p>';
+		result = '<p>No results found</p>';
 	}
 	$('.search-results').html(result);
 }
