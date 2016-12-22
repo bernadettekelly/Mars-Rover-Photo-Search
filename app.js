@@ -27,7 +27,7 @@ function showSearchResults(data) {
 	var result = '';
 	if(data.photos) {
 		data.photos.forEach(function(item) {
-  				result += '<img src="' + item.img_src + '"/>' 
+  				result = '<img src="' + item.img_src + '"/>' 
 		});
 	}
 	else {
@@ -62,11 +62,6 @@ $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 			break;
 	}
 });
-
-//$('#photo-search .camera-dropdown button[type="button"]').click(function(e) {
-//	e.preventDefault();
-//	$('#camera-choice').val( $(e.currentTarget).text().trim() );
-//});
 
 function submitForm() {
 	$('#photo-search').submit(function(e) {
