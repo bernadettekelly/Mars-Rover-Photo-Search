@@ -160,5 +160,9 @@ ul {
 		width: 33%;
 		display: inline-block;
 	}
+
+	.fact {
+		height: 120px;
+	}
 }
 

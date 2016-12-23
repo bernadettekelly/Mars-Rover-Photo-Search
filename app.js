@@ -20,7 +20,11 @@ function getDataFromApi (where, solValue, camera, callback) {
 		page: 1,
 		api_key: '4zeVFAMYIfMZnLUhKGUFmjRv4WpDD7N84PBfVcPs',
 	}
-	$.getJSON(url, query, callback);
+	$.getJSON(url, query, callback)
+.fail(function() {
+    var result = '<p>No results found</p>';
+    $('.search-results').html(result);
+  });
 }
 
 function showSearchResults(data) {
