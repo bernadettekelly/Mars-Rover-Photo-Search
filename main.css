@@ -7,12 +7,18 @@
 
 form {
 	background-color: #A9A9A9;
+	border-top-width: thin;
+    border-top-style: solid;
 }
 
 header {
 	margin-bottom: 0;
 	height: 100px;
 	background-image:url('http://a.abcnews.com/images/Technology/HT_Mars_Opportunity_Rover_mm_160406_12x5_1600.jpg')
+}
+
+.mainDiv {
+
 }
 
 
@@ -27,7 +33,6 @@ h1 {
 .dropdown {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 30px;
 	font-family: 'Orbitron', sans-serif;
 }
 
@@ -48,6 +53,11 @@ h1 {
 .camera-dropdown {
 	display: block;
 	margin: auto;
+	height: 25px;
+}
+
+.rover-dropdown {
+	height: 25px;
 }
 
 header {
@@ -67,6 +77,10 @@ main {
 	background-color: #A9A9A9;
 }
 
+body {
+	background-color: #A9A9A9;
+}
+
 .rover {
     margin-right: 20px;
 }
@@ -81,6 +95,9 @@ section {
 .search-results {
 	margin-top: 40px;
 	font-family: 'Orbitron', sans-serif;
+	position: absolute;
+	right: 30%;
+	top: 10%;
 }
 
 .select {
@@ -88,24 +105,69 @@ section {
 }
 
 .submit {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Orbitron', sans-serif;
+	padding: 6px;
+	margin-top: 10px;
+	font-weight: bold;
+	height: 30px;
+    border: none;
+    background-color: #ddd;
 }
 
 #rover-choice, #camera-choice, #sol-number {
 	font-size: 14px;
 	font-family: 'Orbitron', sans-serif;
+	padding: 2px;
+}
+
+#rover-choice, #sol-number {
+	margin-left: 10px;
+}
+
+#sol-number {
+	margin-bottom: 10px;
+	border-radius: 5px;
+    border: none;
+    padding: 4px;
+    width: 235px;
+    margin-left: 0px;
+}
+
+#rover-choice {
+	width: 250px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+#camera-choice {
+	width: 250px;
 }
 
 .fact {
 	font-family: 'Orbitron', sans-serif;
 	margin-top: 16px;
-	width: 130px;
+	width: 140px;
 	height: 100px;
 	border: solid black 1px;
 	border-radius: 5px;
 	font-size: 14px;
-	margin-left: 20px;
+	margin-left: 15px;
+}
+
+.roverDiv {
+	width: 20px;
+	margin-bottom: 20px;
+}
+
+.cameraDiv {
+	width: 55px;
+	margin-bottom: 20px;
+}
+
+.solDiv {
+	width: 55px;
+	margin-bottom: 20px;
 }
 
 ul {
@@ -117,20 +179,6 @@ ul {
 .sol {
 	display: inline-block;
 	font-family: 'Orbitron', sans-serif;
-}
-
-@media only screen and (min-width: 640px) {
-	.rover {
-		width: 100%;
-		display: block;
-	}
-	.camera {
-		width: 100%;
-		display: block;
-	}
-	.search-results img{
-        width: 50%;
-	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -145,6 +193,31 @@ ul {
 	.sol {
 		width: 25%;
 		display: inline-block;
+	}
+	.search-results {
+		position: absolute;
+		right: 20%;
+		top: 5%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.rover {
+		width: 10%;
+		display: block;
+	}
+	.camera {
+		width: 10%;
+		display: block;
+		margin-top: 30px;
+	}
+	.search-results img{
+        width: 10%;
+	}
+	.search-results {
+		position: absolute;
+		right: 20%;
+		top: 5%;
 	}
 }
 
@@ -164,6 +237,12 @@ ul {
 
 	.fact {
 		height: 120px;
+	}
+
+	.search-results {
+		position: absolute;
+		right: 30%;
+		top: 10%;
 	}
 }
 

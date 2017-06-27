@@ -7,40 +7,44 @@
 <body>
 <header><h1>Mars in Pictures</h1></header>
 <main>
-	<form id="photo-search"><form action="#" method="post"> 
-		<section class="dropdown rover">
-			<label for="select-rover">Select Rover</label>
-			<input type="text" name="select-rover" id="rover-choice">
-				<div class="dropdown-content">
-					<button type="button" class="button1">
-                	<span class="button-label">Curiosity</span></button>
-					<button type="button" class="button2">
-					<span class="button-label">Spirit</span></button>
-					<button type="button" class="button3">
-					<span class="button-label">Opportunity</span></button>
-			    </div>
-		</section>
-		<section class="dropdown camera">
-			<label for="camera-choice"></label>
-			<select id="camera-choice" class="camera-dropdown">
-				<option selected="selected" value>Select Camera</option>
-				<option value="FHAZ">Front Hazard Avoidance Camera</option>
-				<option value="RHAZ">Rear Hazard Avoidance Camera</option>
-				<option value="MAST">Mast Camera</option>
-				<option value="CHEMCAM">Chemistry and Camera Complex</option>
-				<option value="MAHLI">Mars Hand Lens Imager</option>
-				<option value="MARDI">Mars Descent Imager</option>
-				<option value="NAVCAM">Navigation Camera</option>
-				<option value="PANCAM">Panoramic Camera</option>
-				<option value="MINITES">Miniature Thermal Emission Spectrometer</option>
-			</select>
-		</section>
-        <section class="sol">
-			<label for="sol-entry">Enter Sol Number</label>
-			<input type="text" name="sol-entry" id="sol-number" placeholder="Ex: 1510"> 
-			<button type="submit" class="submit">Search</button>
-		</section>
-		<section>
+	<div class="mainDiv">
+		<form id="photo-search"><form action="#" method="post"> 
+		<div class="roverDiv">
+			<section class="dropdown rover">
+				<label for="select-rover"></label>
+				<select id="rover-choice" class="rover-dropdown">
+				<option selected="selected" value>Select Rover</option>
+					<option value="Opportunity">Opportunity</option>
+					<option value="Spirit">Spirit</option>
+					<option value="Curiosity">Curiosity</option>
+				</select>
+			</section>
+		</div>
+		<div class="cameraDiv">
+			<section class="dropdown camera">
+				<label for="camera-choice"></label>
+				<select id="camera-choice" class="camera-dropdown">
+					<option selected="selected" value>Select Camera</option>
+					<option value="FHAZ">Front Hazard Avoidance Camera</option>
+					<option value="RHAZ">Rear Hazard Avoidance Camera</option>
+					<option value="MAST">Mast Camera</option>
+					<option value="CHEMCAM">Chemistry and Camera Complex</option>
+					<option value="MAHLI">Mars Hand Lens Imager</option>
+					<option value="MARDI">Mars Descent Imager</option>
+					<option value="NAVCAM">Navigation Camera</option>
+					<option value="PANCAM">Panoramic Camera</option>
+					<option value="MINITES">Miniature Thermal Emission Spectrometer</option>
+				</select>
+			</section>
+		</div>
+		<div class="solDiv">
+        	<section class="sol">
+				<label for="sol-entry">Enter Sol Number</label>
+				<input type="text" name="sol-entry" id="sol-number" placeholder="Ex: 1510"> 
+				<button type="submit" class="submit">Search</button>
+			</section>
+			<section>
+		</div>
 				<div class="fact">
 						<ul>
 						    <li>Fact: A sol is a Mars solar day.</li>
@@ -48,8 +52,9 @@
 			        		<li>39 minutes, 35.24409 seconds</li>
 			        	</ul>
 			    </div>
-		</section>
-    </form>
+			</section>
+    	</form>
+    </div>
 <div class="search-results">
 
 </div>
