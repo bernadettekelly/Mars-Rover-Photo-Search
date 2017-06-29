@@ -196,7 +196,7 @@ ul {
 	.search-results {
 		position: absolute;
 		right: 25%;
-		top: 500px;
+		top: 25%;
 	}
 	.roverDiv {
 		width: 0;
@@ -208,7 +208,7 @@ ul {
 		width: 0;
 	}
 	.fact {
-		margin-left: 400px;
+		margin-left: 45px;
 	}
 
 	main {
@@ -233,7 +233,7 @@ ul {
 	.search-results {
 		position: absolute;
 		right: 25%;
-		top: 500px;
+		top: 25%;
 	}
 	.roverDiv {
 		width: 0;
@@ -245,7 +245,7 @@ ul {
 		width: 0;
 	}
 	.fact {
-		margin-left: 400px;
+		margin-left: 45px;
 	}
 
 	main {
@@ -255,7 +255,7 @@ ul {
 
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 1280px) {
 	.rover {
 		width: 25%;
 		display: inline-block;
