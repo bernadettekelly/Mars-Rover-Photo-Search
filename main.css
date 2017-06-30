@@ -188,6 +188,7 @@ ul {
 	.mainDiv {
 		position: static;
 	}
+}
 
 @media only screen and (max-width: 640px) {
 	main {
@@ -201,6 +202,7 @@ ul {
 	.mainDiv {
 		position: static;
 	}
+}
 
 	@media only screen and (max-width: 768px) {
 	main {
@@ -214,6 +216,7 @@ ul {
 	.mainDiv {
 		position: static;
 	}
+}
 
 @media only screen and (max-width: 960px) {
 	main {
@@ -227,6 +230,7 @@ ul {
 	.mainDiv {
 		position: static;
 	}
+}
 
 @media only screen and (max-width: 1024px) {
 	main {
@@ -240,6 +244,7 @@ ul {
 	.mainDiv {
 		position: static;
 	}
+}
 
 @media only screen and (min-width: 1280px) {
 	main {
