@@ -182,8 +182,8 @@ ul {
 	}
 	.search-results img {
     	width: 100%;
-    	margin-top: 350px;
-    	margin-left: 40px;
+    	margin-top: 330px;
+    	margin-left: 45px;
     }
 	.mainDiv {
 		position: static;
@@ -195,8 +195,8 @@ ul {
 	}
 	.search-results img {
     	width: 100%;
-    	margin-top: 350px;
-    	margin-left: 40px;
+    	margin-top: 330px;
+    	margin-left: 45px;
     }
 	.mainDiv {
 		position: static;
@@ -208,12 +208,26 @@ ul {
 	}
 	.search-results img {
     	width: 100%;
-    	margin-top: 320px;
-    	margin-left: 110px;
+    	margin-top: 330px;
+    	margin-left: 45px;
     }
 	.mainDiv {
 		position: static;
 	}
+
+@media only screen and (max-width: 1024px) {
+	main {
+		width: 250px;
+	}
+	.search-results img {
+    	width: 100%;
+    	margin-top: 330px;
+    	margin-left: 45px;
+    }
+	.mainDiv {
+		position: static;
+	}
+
 @media only screen and (min-width: 1280px) {
 	main {
 	text-align: center;
