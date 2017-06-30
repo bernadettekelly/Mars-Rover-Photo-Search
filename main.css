@@ -242,6 +242,10 @@ ul {
 	right: 30%;
 	top: 10%;
 	}
+	.search-results img {
+    margin-top: 0px;
+    margin-left: 0px;
+    }
 	.mainDiv {
 	position: fixed;
 	width: 1080px;
