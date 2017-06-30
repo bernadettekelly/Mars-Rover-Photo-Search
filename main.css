@@ -143,7 +143,6 @@ section {
 
 .fact {
 	font-family: 'Orbitron', sans-serif;
-	margin-top: 16px;
 	width: 140px;
 	height: 100px;
 	border: solid black 1px;
@@ -164,7 +163,6 @@ section {
 
 .solDiv {
 	width: 55px;
-	margin-bottom: 20px;
 }
 
 ul {
@@ -178,7 +176,7 @@ ul {
 	font-family: 'Orbitron', sans-serif;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 320px) {
 	main {
 		width: 250px;
 	}
@@ -191,7 +189,20 @@ ul {
 		position: static;
 	}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 640px) {
+	main {
+		width: 250px;
+	}
+	.search-results img {
+    	width: 100%;
+    	margin-top: 350px;
+    	margin-left: 40px;
+    }
+	.mainDiv {
+		position: static;
+	}
+
+@media only screen and (min-width: 960px) {
 	main {
 		width: 250px;
 	}
@@ -204,29 +215,4 @@ ul {
 		position: static;
 	}
 
-@media only screen and (max-width: 960px) {
-	main {
-		width: 250px;
-	}
-	.search-results img {
-    	width: 100%;
-    	margin-top: 320px;
-    	margin-left: 110px;
-    }
-	.mainDiv {
-		position: static;
-	}
-
-@media only screen and (max-width: 1024px) {
-	main {
-		width: 250px;
-	}
-	.search-results img {
-    	width: 100%;
-    	margin-top: 320px;
-    	margin-left: 110px;
-    }
-	.mainDiv {
-		position: static;
-	}
 
