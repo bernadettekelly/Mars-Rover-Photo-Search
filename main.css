@@ -202,6 +202,19 @@ ul {
 		position: static;
 	}
 
+	@media only screen and (max-width: 768px) {
+	main {
+		width: 210px;
+	}
+	.search-results img {
+    	width: 100%;
+    	margin-top: 300px;
+    	margin-right: -100px;
+    }
+	.mainDiv {
+		position: static;
+	}
+
 @media only screen and (max-width: 960px) {
 	main {
 		width: 250px;
