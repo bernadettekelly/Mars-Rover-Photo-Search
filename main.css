@@ -176,7 +176,7 @@ ul {
 	font-family: 'Orbitron', sans-serif;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 414px) {
 	main {
 		width: 250px;
 	}
