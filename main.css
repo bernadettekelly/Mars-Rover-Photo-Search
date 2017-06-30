@@ -214,5 +214,26 @@ ul {
 	.mainDiv {
 		position: static;
 	}
+@media only screen and (min-width: 1280px) {
+	main {
+	text-align: center;
+	background-color: #A9A9A9;
+	width: 980px;
+    margin: 0 auto;
+	}
+	.search-results {
+	margin-top: 40px;
+	font-family: 'Orbitron', sans-serif;
+	position: absolute;
+	right: 30%;
+	top: 10%;
+	}
+	.mainDiv {
+	position: fixed;
+	width: 1080px;
+    margin: 0 auto;
+	}
+
+}
 
 
