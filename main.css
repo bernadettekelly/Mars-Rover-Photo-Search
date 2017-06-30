@@ -121,7 +121,6 @@ section {
 }
 
 #rover-choice, #sol-number {
-	margin-left: 10px;
 }
 
 #sol-number {
@@ -135,7 +134,6 @@ section {
 
 #rover-choice {
 	width: 250px;
-	margin-right: 10px;
 	margin-top: 20px;
 }
 
@@ -180,7 +178,7 @@ ul {
 	font-family: 'Orbitron', sans-serif;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
 	.rover {
 		width: 10%;
 		display: block;
@@ -190,9 +188,7 @@ ul {
 		display: block;
 		margin-top: 30px;
 	}
-	.search-results img{
-        width: 10%;
-	}
+
 	.search-results {
 		position: absolute;
 		right: 25%;
@@ -200,6 +196,7 @@ ul {
 	}
 	.roverDiv {
 		width: 0;
+		margin-bottom: 0;
 	}
 	.cameraDiv {
 		width: 0;
@@ -208,12 +205,22 @@ ul {
 		width: 0;
 	}
 	.fact {
-		margin-left: 45px;
+		margin-left: 15px;
 	}
 
 	main {
 		width: 250px;
     	margin: 0 auto;
+	}
+
+	.search-results img {
+    	width: 100%;
+    	margin-top: 400px;
+    	margin-left: 20px;
+	}
+
+	.mainDiv {
+		position: relative;
 	}
 }
 
@@ -237,6 +244,7 @@ ul {
 	}
 	.roverDiv {
 		width: 0;
+		margin-bottom: 0;
 	}
 	.cameraDiv {
 		width: 0;
@@ -245,7 +253,7 @@ ul {
 		width: 0;
 	}
 	.fact {
-		margin-left: 45px;
+		margin-left: 15px;
 	}
 
 	main {
@@ -253,9 +261,15 @@ ul {
     	margin: 0 auto;
 	}
 
+	.search-results img {
+    	width: 100%;
+    	margin-top: 330px;
+    	margin-right: 60px;
+	}
+
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1280px) {
 	.rover {
 		width: 25%;
 		display: inline-block;
