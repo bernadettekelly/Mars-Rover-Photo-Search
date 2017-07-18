@@ -29,7 +29,7 @@ function getDataFromApi (where, solValue, camera, callback) {
 
 function showSearchResults(data) {
 	var result = '';
-	if(data.photos) {
+	if(data.photos.length >=1) {
 		data.photos.forEach(function(item) {
   				result = '<img src="' + item.img_src + '"/>' 
 		});
