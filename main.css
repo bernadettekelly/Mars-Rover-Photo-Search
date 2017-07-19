@@ -184,6 +184,14 @@ ul {
     	margin-top: 330px;
     	margin-left: 45px;
     }
+
+    .search-results {
+    	right: 25%;
+    	top: 76%;
+    	margin: 0 auto;
+    	font-size: 24px;
+    	font-weight: bold;
+    }
 	.mainDiv {
 		position: static;
 	}
@@ -197,6 +205,13 @@ ul {
     	width: 100%;
     	margin-top: 330px;
     	margin-left: 45px;
+    }
+    .search-results {
+    	right: 25%;
+    	top: 76%;
+    	margin: 0 auto;
+    	font-size: 24px;
+    	font-weight: bold;
     }
 	.mainDiv {
 		position: static;
@@ -217,8 +232,13 @@ ul {
 	}
 
 	.search-results {
-		right: 20%;
-	}
+    	right: 25%;
+    	top: 46%;
+    	margin: 0 auto;
+    	width: 52%
+    	font-size: 24px;
+    	font-weight: bold;
+    }
 }
 
 @media only screen and (max-width: 960px) {
@@ -251,9 +271,14 @@ ul {
 		position: static;
 	}
 
-	.search-results {
-		right: 25%;
-	}
+	 .search-results {
+    	right: 25%;
+    	top: 35%;
+    	margin: 0 auto;
+    	width: 52%
+    	font-size: 24px;
+    	font-weight: bold;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
