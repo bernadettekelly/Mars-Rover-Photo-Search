@@ -185,8 +185,8 @@ ul {
     }
 
     .search-results {
-    	right: 25%;
-    	top: 76%;
+    	right: 20%;
+    	top: 80%;
     	margin: 0 auto;
     	font-size: 24px;
     	font-weight: bold;
@@ -196,7 +196,7 @@ ul {
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
 	main {
 		width: 250px;
 	}
@@ -206,7 +206,7 @@ ul {
     }
     .search-results {
     	right: 25%;
-    	top: 76%;
+    	top: 70%;
     	margin: 0 auto;
     	font-size: 24px;
     	font-weight: bold;
@@ -229,7 +229,7 @@ ul {
 	}
 
 	.search-results {
-    	right: 25%;
+    	right: 39%;
     	top: 46%;
     	margin: 0 auto;
     	width: 52%
@@ -251,6 +251,8 @@ ul {
 
 	.search-results {
 		right: 41%;
+		font-size: 24px;
+    	font-weight: bold;
 	}
 }
 
