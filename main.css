@@ -104,6 +104,10 @@ section {
 	top: 10%;
 }
 
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
 .select {
 	font-size: 14px;
 }
@@ -248,7 +252,7 @@ img {
     	right: 18%;
     	top: 55%;
     	margin: 0 auto;
-    	width: 52%
+    	width: 58%;
     	font-size: 24px;
     	font-weight: bold;
     }
@@ -291,7 +295,7 @@ img {
     	right: 27%;
     	top: 50%;
     	margin: 0 auto;
-    	width: 52%
+    	width: 52%;
     	font-size: 24px;
     	font-weight: bold;
     }
@@ -320,6 +324,9 @@ img {
 	position: fixed;
 	width: 1080px;
     margin: 0 auto;
+	}
+	.search-results {
+		width: 35%;
 	}
 
 }

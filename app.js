@@ -39,7 +39,7 @@ function showSearchResults(data) {
 		});
 	}
 	else {
-		result = '<p>No results found</p>';
+		result = '<p>No images are available for this date</p>';
 	}
 	$('.search-results').html(result);
 }
