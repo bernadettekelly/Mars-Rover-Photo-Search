@@ -2,6 +2,10 @@ var curiosity_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/ph
 var spirit_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos";
 var opportunity_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos";
 
+date = new Date();
+date.setDate(date.getDate() - 7);
+$('#sol-number').val(date.toISOString().substring(0, 10));
+
 function getDataFromApi (where, solValue, camera, callback) {
 	var url = curiosity_URL;
 	if(where == 'Curiosity'){
@@ -15,14 +19,14 @@ function getDataFromApi (where, solValue, camera, callback) {
 	}
 
 	var query = {
-		sol: solValue,
+		earth_date: solValue,
 		camera: camera,
 		page: 1,
 		api_key: '4zeVFAMYIfMZnLUhKGUFmjRv4WpDD7N84PBfVcPs',
 	}
 	$.getJSON(url, query, callback)
 .fail(function() {
-    var result = '<p>No results found</p>';
+    var result = '<p>No images are available for this date</p>';
     $('.search-results').html(result);
   });
 }
@@ -76,4 +80,8 @@ function submitForm() {
 		getDataFromApi(where, solValue, camera, showSearchResults);
 	});
 }
-$(document).ready(function(){submitForm()});
+$(document).ready(function(){
+	submitForm();
+	getDataFromApi("Opportunity", "2016-05-30", "FHAZ", showSearchResults);
+})
+

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
 	margin: 0;
@@ -30,7 +31,11 @@ h1 {
 .dropdown {
 	position: relative;
 	display: inline-block;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+.star {
+	font-stretch: 12px;
 }
 
 .dropdown-content {
@@ -93,7 +98,7 @@ section {
 
 .search-results {
 	margin-top: 40px;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	position: absolute;
 	right: 30%;
 	top: 10%;
@@ -105,18 +110,19 @@ section {
 
 .submit {
 	font-size: 16px;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	padding: 6px;
 	margin-top: 10px;
 	font-weight: bold;
-	height: 30px;
+	height: 35px;
+	width: 100px;
     border: none;
     background-color: #ddd;
 }
 
 #rover-choice, #camera-choice, #sol-number {
 	font-size: 14px;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	padding: 2px;
 }
 
@@ -142,7 +148,7 @@ section {
 }
 
 .fact {
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	width: 140px;
 	border: solid black 1px;
 	border-radius: 5px;
@@ -172,7 +178,11 @@ ul {
 
 .sol {
 	display: inline-block;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+img {
+	border-radius: 5px;
 }
 
 @media only screen and (max-width: 414px) {
@@ -180,19 +190,22 @@ ul {
 		width: 250px;
 	}
 	.search-results img {
-    	width: 100%;
-    	margin-top: 240px;
+    	width: 70%;
     }
 
     .search-results {
-    	right: 20%;
-    	top: 80%;
+    	right: 0%;
+    	top: 110%;
     	margin: 0 auto;
     	font-size: 24px;
     	font-weight: bold;
     }
 	.mainDiv {
 		position: static;
+	}
+	body {
+		position: fixed;
+		width: 100%;
 	}
 }
 
@@ -201,18 +214,21 @@ ul {
 		width: 250px;
 	}
 	.search-results img {
-    	width: 100%;
-    	margin-top: 240px;
-    }
+    	width: 70%;
+   }
     .search-results {
-    	right: 25%;
-    	top: 70%;
+    	right: 0%;
+    	top: 110%;
     	margin: 0 auto;
     	font-size: 24px;
     	font-weight: bold;
     }
 	.mainDiv {
 		position: static;
+	}
+	body {
+		position: fixed;
+		width: 100%;
 	}
 }
 
@@ -229,13 +245,16 @@ ul {
 	}
 
 	.search-results {
-    	right: 34%;
-    	top: 46%;
+    	right: 18%;
+    	top: 55%;
     	margin: 0 auto;
     	width: 52%
     	font-size: 24px;
     	font-weight: bold;
     }
+    body {
+		position: relative;
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -269,8 +288,8 @@ ul {
 	}
 
 	 .search-results {
-    	right: 40%;
-    	top: 35%;
+    	right: 27%;
+    	top: 50%;
     	margin: 0 auto;
     	width: 52%
     	font-size: 24px;
@@ -286,7 +305,7 @@ ul {
     margin: 0 auto;
 	}
 	.search-results {
-	margin-top: 40px;
+	margin-top: 120px;
 	font-family: 'Orbitron', sans-serif;
 	position: absolute;
 	right: 20%;
