@@ -448,7 +448,7 @@ a {
 	}
 	.search-results {
 	right: 0%;
-    top: 30%;
+    top: 32%;
     margin: 0 auto;
     font-size: 24px;
     font-weight: bold;
@@ -477,12 +477,12 @@ a {
     margin-left: 0px;
 	}
 	#rover-choice {
-	width: 160px;
+	width: 175px;
 	margin-top: 20px;
 	}
 
 	#camera-choice {
-	width: 160px;
+	width: 175px;
 	}
 	.mGlassPic {
 	border-radius: 0%;
@@ -503,7 +503,7 @@ a {
 	position: relative;
 	margin-top: 5%;
 	float: left;
-	margin-left: 3%;
+	margin-left: -55px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -530,7 +530,7 @@ a {
 
     .search-results {
     	right: 0%;
-    	top: 115%;
+    	top: 120%;
     	margin: 0 auto;
     	font-size: 24px;
     	font-weight: bold;
