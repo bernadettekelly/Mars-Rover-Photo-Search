@@ -2,60 +2,72 @@
 <html>
 <link rel="stylesheet" type="text/css" href="main.css">
 <meta name="viewport" content="width=device-width, user-scalable=no">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 <head>
 	<title>Mars Rover Photo Search</title>
 </head>
 <body>
-<header><h1>Mars in Pictures</h1></header>
+	<header><h1>MARS IN PICTURES</h1>
+		<div class="headerImage"><img src="MarsHeader.png" class="marspic"></div>
+		<div class="mGlass"><a href=""><img src="magnifyingGlass.png" class="mGlassPic"></a></div>
+	</header>
 <main>
-	<div class="mainDiv">
-		<form id="photo-search"><form action="#" method="post"> 
-		<div class="roverDiv">
-			<section class="dropdown rover">
-				<label for="select-rover"></label>
-				<select id="rover-choice" class="rover-dropdown">
-				<option selected="selected" value>Select Rover</option>
-					<option value="Opportunity">Opportunity</option>
-					<option value="Spirit">Spirit</option>
-					<option value="Curiosity">Curiosity</option>
-				</select>
-			</section>
-		</div>
-		<div class="cameraDiv">
-			<section class="dropdown camera">
-				<label for="camera-choice"></label>
-				<select id="camera-choice" class="camera-dropdown">
-					<option selected="selected" value>Select Camera</option>
-					<option value="FHAZ">Front Hazard Avoidance Camera</option>
-					<option value="RHAZ">Rear Hazard Avoidance Camera</option>
-					<option value="MAST">Mast Camera</option>
-					<option value="CHEMCAM">Chemistry and Camera Complex</option>
-					<option value="MAHLI">Mars Hand Lens Imager</option>
-					<option value="MARDI">Mars Descent Imager</option>
-					<option value="NAVCAM">Navigation Camera</option>
-					<option value="PANCAM">Panoramic Camera</option>
-					<option value="MINITES">Miniature Thermal Emission Spectrometer</option>
-				</select>
-			</section>
-		</div>
-		<div class="solDiv">
-        	<section class="sol">
-				<label for="sol-entry">Enter Date</label>
-				<input type="date" name="sol-entry" id="sol-number" placeholder="Ex: 1510">
-				<p class="star">* Select a date from 2012 - present</p> 
-				<button type="submit" class="submit">Search</button>
-			</section>
-			<section>
-		</div>
+	<div id="myModal" class="modal">
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+   				<form id="photo-search"><form action="#" method="post"> 
+					<div class="roverDiv">
+						<section class="dropdown rover">
+							<label for="select-rover"></label>
+							<select id="rover-choice" class="rover-dropdown">
+								<option selected="selected" value>Select Rover</option>
+								<option value="Opportunity">Opportunity</option>
+								<option value="Spirit">Spirit</option>
+								<option value="Curiosity">Curiosity</option>
+							</select>
+						</section>
+					</div>
+					<div class="cameraDiv">
+						<section class="dropdown camera">
+							<label for="camera-choice"></label>
+							<select id="camera-choice" class="camera-dropdown">
+								<option selected="selected" value>Select Camera</option>
+								<option value="FHAZ">Front Hazard Avoidance Camera</option>
+								<option value="RHAZ">Rear Hazard Avoidance Camera</option>
+								<option value="MAST">Mast Camera</option>
+								<option value="CHEMCAM">Chemistry and Camera Complex</option>
+								<option value="MAHLI">Mars Hand Lens Imager</option>
+								<option value="MARDI">Mars Descent Imager</option>
+								<option value="NAVCAM">Navigation Camera</option>
+								<option value="PANCAM">Panoramic Camera</option>
+								<option value="MINITES">Miniature Thermal Emission Spectrometer</option>
+							</select>
+						</section>
+					</div>
+					<div class="solDiv">
+        				<section class="sol">
+							<label for="sol-entry">Enter Date</label>
+							<input type="date" name="sol-entry" id="sol-number" placeholder="Ex: 1510">
+							<p class="star">* Select a date from 2012 - present</p> 
+							<button type="submit" class="submit">Search</button>
+						</section>
+					</div>
 				
-			</section>
-    	</form>
+    			</form>
+      	</div>
     </div>
-<div class="search-results">
+	<div class="mainDiv">
+		<div class="start"><a href="" class="startLink">BEGIN YOUR SEARCH</a></div>
+		<div class="infoText"></div>
+    </div>
+	<div class="search-results">
 
-</div>
+	</div>
+		
 </main>
+		
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
 <script type="text/javascript" src="app.js"></script>
+<footer>Hi</footer>
 </body>
 </html>

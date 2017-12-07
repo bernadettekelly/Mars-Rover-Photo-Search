@@ -2,9 +2,40 @@ var curiosity_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/ph
 var spirit_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos";
 var opportunity_URL = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos";
 
+var beginClicked = false;
+
 date = new Date();
 date.setDate(date.getDate() - 7);
 $('#sol-number').val(date.toISOString().substring(0, 10));
+
+$('.close').click(function(e) {
+	e.preventDefault();
+	$('.modal').hide();
+});
+//
+$(document).ready(function() {
+	$('.modal').hide();
+	$('.mGlassPic').hide();
+});
+//
+$('.startLink').click(function(e) {
+	e.preventDefault();
+	$('.modal').show();
+	$('.mGlassPic').show();
+	beginClicked = true;
+	
+});
+//
+$('.mGlassPic').click(function(e) {
+	e.preventDefault();
+	$('.modal').show();
+});
+
+
+//$('.submit').click(function(e) {
+//	e.preventDefault();
+//	$('.modal').hide();
+//});
 
 function getDataFromApi (where, solValue, camera, callback) {
 	var url = curiosity_URL;
@@ -40,8 +71,13 @@ function showSearchResults(data) {
 	}
 	else {
 		result = '<p>No images are available for this date</p>';
+		$('.infoText').hide();
 	}
 	$('.search-results').html(result);
+	$('.modal').hide();
+	if(beginClicked) {
+		$('.start').hide();
+	};
 }
 
 $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
@@ -78,10 +114,14 @@ function submitForm() {
 		var solValue = $('#sol-number').val();
 		var camera = $('#camera-choice').val();
 		getDataFromApi(where, solValue, camera, showSearchResults);
+		$('.infoText').text(where + " " +  solValue + " " + camera);
+		//TweenMax.to('.infoText', 7, {left:630, repeat:-1, yoyo:true});
+		//TweenLite.to('.infoText', .5, {left: 80, ease:Power2.easInOut});
+		TweenMax.to('.infoText', .7, {left: 100, ease:Back.easeOut});
 	});
 }
 $(document).ready(function(){
 	submitForm();
-	getDataFromApi("Opportunity", "2016-05-30", "FHAZ", showSearchResults);
+	getDataFromApi("Opportunity", "2016-12-21", "FHAZ", showSearchResults);
 })
 
