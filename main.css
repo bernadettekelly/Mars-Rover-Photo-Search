@@ -343,7 +343,7 @@ a {
 	h1 {
 		left: -3%;
 		font-size: 22px;
-		top: 4%;
+		top: 3%;
 	}
 	.start {
 	font-family:'Squada One', cursive;
@@ -351,7 +351,7 @@ a {
 	float: left;
 	margin-top: 5%;
 	font-size: 21px;
-	margin-left: 7%;
+	margin-left: 8%;
 	top: 4%;
 	}
 	.search-results {
@@ -443,7 +443,7 @@ a {
 	float: left;
 	margin-top: 5%;
 	font-size: 21px;
-	margin-left: 10%;
+	margin-left: 11%;
 	top: 4%;
 	}
 	.search-results {
@@ -603,7 +603,7 @@ a {
 		width: 210%;
 	}
 	h1 {
-		left: -1%;
+		left: -2%;
 		font-size: 22px;
 		top: 5%;
 	}
@@ -790,6 +790,14 @@ a {
 	.infoText {
 		margin-left: 330px;
 	}
+	.mGlassPic {
+	border-radius: 0%;
+	float: right;
+	margin-right: 30px;
+	margin-top: 32px;
+	cursor: pointer;
+	width: 50px;
+	}
 	p {
 		width: 85%;
 		margin: 0 auto;
@@ -884,8 +892,9 @@ a {
 	border-radius: 0%;
 	float: right;
 	margin-right: 30px;
-	margin-top: 45px;
+	margin-top: 38px;
 	cursor: pointer;
+	width: 50px;
 	}
 	footer {
     background-color: black;

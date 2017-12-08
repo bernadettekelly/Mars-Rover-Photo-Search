@@ -67,6 +67,7 @@ function showSearchResults(data) {
 	if(data.photos.length >=1) {
 		data.photos.forEach(function(item) {
   				result = '<img src="' + item.img_src + '"/>' 
+  		$('.infoText').show();
 		});
 	}
 	else {
