@@ -411,7 +411,7 @@ a {
 	position: relative;
 	margin-top: 5%;
 	float: left;
-	margin-left: 3%;
+	margin-left: -8%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -589,7 +589,7 @@ a {
 	position: relative;
 	margin-top: 5%;
 	float: left;
-	margin-left: 3%;
+	margin-left: -3%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -674,7 +674,7 @@ a {
     	font-weight: bold;
     }
     .infoText {
-		margin-left: 250px;
+		margin-left: 160px;
 	}
     #photo-search {
 	margin-left: 0%;
@@ -788,7 +788,7 @@ a {
 	margin: 0 auto;
 	}
 	.infoText {
-		margin-left: 330px;
+		margin-left: 250px;
 	}
 	.mGlassPic {
 	border-radius: 0%;
