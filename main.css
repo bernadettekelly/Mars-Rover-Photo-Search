@@ -12,6 +12,7 @@
 header {
 	margin-bottom: 0;
 	height: 100px;
+	background-image:url('MarsHeader.png');
 	/*background-image:url('http://a.abcnews.com/images/Technology/HT_Mars_Opportunity_Rover_mm_160406_12x5_1600.jpg');*/
 	background-color: black;
 	border-bottom: black 1px solid;
@@ -23,6 +24,8 @@ header {
 	text-align: center;
 	z-index: 1;
 	height: 110px;
+	background-repeat: no-repeat;
+	border-bottom: 3px solid #D95204;
 }
 
 
@@ -50,6 +53,7 @@ footer {
     width: 100%;
     margin-top: 624px;
     height: 25px;
+    bottom: 0;
 }
 
 body {
@@ -74,9 +78,28 @@ img {
 	border-radius: 50%;
 }
 
-a {
-	text-decoration: none;
-	color: black;
+.footerText, .meInfo {
+	color: #808080ab;
+	font-size: 14px;
+	float: right;
+	font-family: 'Roboto', sans-serif;
+}
+
+.footerText {
+	padding-left: 10px;
+	padding-right: 4px;
+}
+
+.meInfo {
+	padding-top: 3px;
+}
+
+.meInfo:hover {
+	color: white;
+}
+
+.footerText:hover {
+	color: white;
 }
 
 .dropdown {
@@ -151,6 +174,7 @@ a {
 	position: absolute;
 	right: 30%;
 	top: 10%;
+	padding-bottom: 35px;
 }
 
 
@@ -227,6 +251,11 @@ a {
 .mGlassPic:hover {
 	transition: all 200ms ease-in;
 	transform: scale(1.1); 
+}
+
+.startLink {
+	text-decoration: none;
+	color: black;
 }
 
 .start {
@@ -341,9 +370,10 @@ a {
 	}
 	header {
 		height: 86px;
+		background-repeat: no-repeat;
 	}
 	h1 {
-		left: -3%;
+		left: 17%;
 		font-size: 22px;
 		top: 3%;
 	}
@@ -433,9 +463,10 @@ a {
 	}
 	header {
 		height: 86px;
+		background-repeat: no-repeat;
 	}
 	h1 {
-		left: -4%;
+		left: 15%;
 		font-size: 22px;
 		top: 2%;
 	}
@@ -605,9 +636,9 @@ a {
 		width: 210%;
 	}
 	h1 {
-		left: -2%;
+		left: 13%;
 		font-size: 22px;
-		top: 5%;
+		top: 8%;
 	}
 	p {
 		width: 70%;
@@ -649,8 +680,8 @@ a {
 		width: 100%;
 	}
 	h1 {
-		top: 7%;
-		left: -1%;
+		top: 10%;
+		left: 7%;
 	}
 
 	.marspic {
@@ -752,7 +783,7 @@ a {
 	font-family:'Squada One', cursive;
 	padding: 30px;
 	position: absolute;
-	left: -1%;
+	left: 2%;
 	z-index: 3;
 	top: 21%;
 	}
@@ -770,6 +801,7 @@ a {
 	text-align: center;
 	z-index: 1;
 	height: 110px;
+	border-bottom: 3px solid #D95204;
 	}
 	footer {
 		margin-top: 1228px;
@@ -921,13 +953,18 @@ a {
 		width: 80%;
 	}
 	h1 {
-		left: 1%;
+		left: 20px;
 		font-size: 33px;
 	}
 	p {
 		width: 85%;
 		margin: 0 auto;
 		margin-top: 160px;
+	}
+	.footerClass {
+	color: white;
+	font-size: 14px;
+	float: right;
 	}
 
 }
