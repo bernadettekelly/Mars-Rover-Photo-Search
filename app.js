@@ -81,9 +81,11 @@ function showSearchResults(data) {
 	};
 }
 
-$('#photo-search .dropdown-content button[type="button"]').click(function(e) {
-	e.preventDefault();
-	var rover = $(e.currentTarget).text().trim();
+$('#rover-choice').change(function(e) {
+	//e.preventDefault();
+	var rover = $(e.currentTarget).val().trim();
+	//var rover = $('#rover-choice').find(':selected').text();
+	console.log("user selected rover", rover);
 	$('#rover-choice').val( rover );
 	switch(rover){
 		case 'Curiosity':
@@ -107,6 +109,8 @@ $('#photo-search .dropdown-content button[type="button"]').click(function(e) {
 			break;
 	}
 });
+
+
 
 function submitForm() {
 	$('#photo-search').submit(function(e) {
