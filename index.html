@@ -5,19 +5,58 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 <head>
 	<title>Mars Rover Photo Search</title>
+	<meta property="og:url"           content="https://bernadettekelly.github.io/Mars-Rover-Photo-Search/"/>
+	<meta property="og:description"   content="I'm touring Mars!" />
+	<meta property="og:title"         content="Mars Rover Photo Search" />
+  	<meta property="og:description"   content="Your description" />
+  	<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
 	<header><h1>MARS IN PICTURES</h1>
 		<!--<div class="headerImage"><img src="MarsHeader.png" class="marspic"></div>-->
 		<div class="mGlass"><a href=""><img src="magGlass2.png" class="mGlassPic"></a></div>
 	</header>
+	<div class="fb-share-button" 
+    data-href="https://bernadettekelly.github.io/Mars-Rover-Photo-Search/" 
+    data-layout="button_count">
+  </div>
+	<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fbernadettekelly.github.io%2FMars-Rover-Photo-Search%2F&layout=button_count&size=small&mobile_iframe=false&width=69&height=20&appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	<a class="twitter-share-button"
+  	href="https://twitter.com/intent/tweet?text=I'm touring Mars!"data-size="small">
+	Tweet</a>
 <main>
 	<div id="myModal" class="modal">
   		<div class="modal-content">
     		<span class="close">&times;</span>
    				<form id="photo-search"><form action="#" method="post"> 
 					<div class="roverDiv">
-						<section id="dropdown rover">
+						<section class="dropdown rover">
 							<label for="select-rover"></label>
 							<select id="rover-choice" class="rover-dropdown">
 								<option selected="selected" value>Select Rover</option>

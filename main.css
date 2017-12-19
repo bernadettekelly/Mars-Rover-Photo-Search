@@ -42,7 +42,7 @@ h1 {
 
 main {
 	text-align: center;
-	background-color: #A9A9A9;
+	background-color: white;
 	width: 980px;
     margin: 0 auto;
 }
@@ -76,6 +76,17 @@ ul {
 
 img {
 	border-radius: 50%;
+}
+
+.fb-share-button {
+	margin-top: 14px;
+	margin-right: 86%;
+}
+
+.twitter-share-button {
+	float: right;
+	margin-right: 3%;
+	margin-top: -24px;
 }
 
 .footerText, .meInfo {
@@ -174,9 +185,8 @@ img {
 	position: absolute;
 	right: 30%;
 	top: 10%;
-	padding-bottom: 35px;
+	padding-bottom: 45px;
 }
-
 
 .select {
 	font-size: 14px;
@@ -223,7 +233,6 @@ img {
 	font-family: 'Roboto', sans-serif;
 	color: white;
 }
-
 
 .headerImage {
 	float: left;
@@ -448,6 +457,16 @@ img {
 	font-size: 20px;
 	text-transform: uppercase;
 	}
+	.fb-share-button {
+	margin-top: 4%;
+	margin-right: 50%;
+	}
+
+	.twitter-share-button {
+	float: right;
+	margin-right: 3%;
+	margin-top: 8px;
+	}
 }
 
 
@@ -540,6 +559,16 @@ img {
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	text-transform: uppercase;
+	}
+	.fb-share-button {
+	margin-top: 3%;
+	margin-right: 55%;
+	}
+
+	.twitter-share-button {
+	float: right;
+	margin-right: 3%;
+	margin-top: 6px;
 	}
 }
 
@@ -644,6 +673,16 @@ img {
 		width: 70%;
 		margin: 0 auto;
 	}
+	.fb-share-button {
+	margin-top: 3%;
+	margin-right: 58%;
+	}
+
+	.twitter-share-button {
+	float: right;
+	margin-right: 3%;
+	margin-top: 5px;
+	}
 }
 
 @media only screen and (min-width: 640px) {
@@ -726,6 +765,16 @@ img {
 		margin: 0 auto;
 		margin-top: 200px;
 	}
+	.fb-share-button {
+	margin-top: 1%;
+	margin-right: 74%;
+	}
+
+	.twitter-share-button {
+	float: right;
+	margin-right: 3%;
+	margin-top: 3px;
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -785,7 +834,7 @@ img {
 	position: absolute;
 	left: 2%;
 	z-index: 3;
-	top: 21%;
+	top: 11%;
 	}
 
 	header {
@@ -837,6 +886,16 @@ img {
 		margin: 0 auto;
 		margin-top: 300px;
 	}
+	.fb-share-button {
+	margin-top: 1%;
+	margin-right: 80%;
+	}
+
+	.twitter-share-button {
+	float: right;
+	margin-right: 3%;
+	margin-top: 3px;
+	}
 
 }
 
@@ -866,7 +925,7 @@ img {
 	}
 	.search-results {
     	right: 27%;
-    	top: 120%;
+    	top: 110%;
     	margin: 0 auto;
     	width: 35%;
     	font-size: 24px;
@@ -955,6 +1014,7 @@ img {
 	h1 {
 		left: 20px;
 		font-size: 33px;
+		top: 14%;
 	}
 	p {
 		width: 85%;
@@ -965,6 +1025,16 @@ img {
 	color: white;
 	font-size: 14px;
 	float: right;
+	}
+	.fb-share-button {
+	margin-top: 14px;
+	margin-right: 86%;
+	}
+
+	.twitter-share-button {
+	float: right;
+	margin-right: 3%;
+	margin-top: 8px;
 	}
 
 }
