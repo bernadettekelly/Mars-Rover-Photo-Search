@@ -459,13 +459,14 @@ img {
 	}
 	.fb-share-button {
 	margin-top: 4%;
-	margin-right: 50%;
+	margin-right: 5%;
+	float: right;
 	}
 
 	.twitter-share-button {
 	float: right;
 	margin-right: 3%;
-	margin-top: 8px;
+	margin-top: 11px;
 	}
 }
 
@@ -562,13 +563,14 @@ img {
 	}
 	.fb-share-button {
 	margin-top: 3%;
-	margin-right: 55%;
+	margin-right: 5%;
+	float: right;
 	}
 
 	.twitter-share-button {
 	float: right;
 	margin-right: 3%;
-	margin-top: 6px;
+	margin-top: 11px;
 	}
 }
 
@@ -675,13 +677,14 @@ img {
 	}
 	.fb-share-button {
 	margin-top: 3%;
-	margin-right: 58%;
+	margin-right: 6%;
+	float: right;
 	}
 
 	.twitter-share-button {
 	float: right;
 	margin-right: 3%;
-	margin-top: 5px;
+	margin-top: 12px;
 	}
 }
 
@@ -767,13 +770,14 @@ img {
 	}
 	.fb-share-button {
 	margin-top: 1%;
-	margin-right: 74%;
+	margin-right: 7%;
+	float: right;
 	}
 
 	.twitter-share-button {
 	float: right;
 	margin-right: 3%;
-	margin-top: 3px;
+	margin-top: 9px;
 	}
 }
 
@@ -887,14 +891,15 @@ img {
 		margin-top: 300px;
 	}
 	.fb-share-button {
-	margin-top: 1%;
-	margin-right: 80%;
+	float: right;
+	margin-top: 9px;
+	margin-right: 4%;
 	}
 
 	.twitter-share-button {
 	float: right;
 	margin-right: 3%;
-	margin-top: 3px;
+	margin-top: 10px;
 	}
 
 }
