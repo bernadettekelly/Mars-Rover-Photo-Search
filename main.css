@@ -458,7 +458,7 @@ img {
 	text-transform: uppercase;
 	}
 	.fb-share-button {
-	margin-top: 4%;
+	margin-top: 11px;
 	margin-right: 5%;
 	float: right;
 	}
@@ -892,7 +892,7 @@ img {
 	}
 	.fb-share-button {
 	float: right;
-	margin-top: 9px;
+	margin-top: 10px;
 	margin-right: 4%;
 	}
 
@@ -1033,7 +1033,7 @@ img {
 	}
 	.fb-share-button {
 	float: right;
-	margin-top: 9px;
+	margin-top: 8px;
 	margin-right: 4%;
 	}
 
