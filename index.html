@@ -38,7 +38,6 @@
   return t;
 }(document, "script", "twitter-wjs"));</script>
 
-	<header><h1>MARS IN PICTURES</h1>
 		<!--<div class="headerImage"><img src="MarsHeader.png" class="marspic"></div>-->
 		<div class="mGlass"><a href=""><img src="magGlass2.png" class="mGlassPic"></a></div>
 	</header>
@@ -56,6 +55,8 @@
   		<div class="modal-content">
     		<span class="close">&times;</span>
    				<form id="photo-search"><form action="#" method="post"> 
+   					<div class="modalTitle">Mars Rover Search <img src="miniMars.png" class="miniMars" alt="mars image"></div>
+   					<div class="subTitle">Explore images captured by the Mars rovers beginning in 2012</div>
 					<div class="roverDiv">
 						<section class="dropdown rover">
 							<label for="select-rover"></label>
@@ -88,7 +89,6 @@
         				<section class="sol">
 							<label for="sol-entry">Enter Date</label>
 							<input type="date" name="sol-entry" id="sol-number" placeholder="Ex: 1510">
-							<p class="star">* Select a date from 2012 - present</p> 
 							<button type="submit" class="submit">Search</button>
 						</section>
 					</div>
@@ -97,14 +97,15 @@
       	</div>
     </div>
 	<div class="mainDiv">
-		<div class="start"><a href="" class="startLink">BEGIN YOUR SEARCH</a></div>
-		<div class="infoText"></div>
+			<div class="start"><a href="" class="startLink">BEGIN YOUR SEARCH</a></div>
+			<div class="infoText"></div>
     </div>
 	<div class="search-results">
 
 	</div>
 		
 </main>
+<img src="openPic.png" class="openPic" alt="Mars Image">
 		
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
 <script type="text/javascript" src="app.js"></script>

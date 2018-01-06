@@ -16,6 +16,7 @@ $('.close').click(function(e) {
 $(document).ready(function() {
 	$('.modal').hide();
 	$('.mGlassPic').hide();
+	$('.modal').show();
 });
 //
 $('.startLink').click(function(e) {
@@ -29,6 +30,11 @@ $('.startLink').click(function(e) {
 $('.mGlassPic').click(function(e) {
 	e.preventDefault();
 	$('.modal').show();
+});
+
+$('.close').click(function(e) {
+	e.preventDefault();
+	$('.mGlassPic').show();
 });
 
 
@@ -76,6 +82,7 @@ function showSearchResults(data) {
 	}
 	$('.search-results').html(result);
 	$('.modal').hide();
+	$('.mGlassPic').show();
 	if(beginClicked) {
 		$('.start').hide();
 	};
@@ -110,6 +117,10 @@ $('#rover-choice').change(function(e) {
 	}
 });
 
+TweenLite.from('.modal', 1, {autoAlpha:0, delay:3});
+TweenLite.to('.openPic', 1, {autoAlpha:0, delay:2});
+TweenMax.from('.openPic', 1, {scale:0.3, autoAlpha:0}, 0.2);
+
 
 
 function submitForm() {
@@ -128,6 +139,6 @@ function submitForm() {
 }
 $(document).ready(function(){
 	submitForm();
-	getDataFromApi("Opportunity", "2016-12-21", "FHAZ", showSearchResults);
+	//getDataFromApi("Opportunity", "2016-12-21", "FHAZ", showSearchResults);
 })
 
