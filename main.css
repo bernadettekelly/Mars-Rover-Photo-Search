@@ -466,10 +466,12 @@ img {
 	#rover-choice {
 	width: 160px;
 	margin-top: 20px;
+	border: solid black 1px;
 	}
 
 	#camera-choice {
 	width: 160px;
+	border: solid black 1px;
 	}
 	.mGlassPic {
 	border-radius: 0%;
@@ -583,10 +585,12 @@ img {
 	#rover-choice {
 	width: 175px;
 	margin-top: 20px;
+	border: solid black 1px;
 	}
 
 	#camera-choice {
 	width: 175px;
+	border: solid black 1px;
 	}
 	.mGlassPic {
 	border-radius: 0%;
@@ -684,10 +688,12 @@ img {
 	#rover-choice {
 	width: 160px;
 	margin-top: 20px;
+	border: solid black 1px;
 	}
 
 	#camera-choice {
 	width: 160px;
+	border: solid black 1px;
 	}
 	.mGlassPic {
 	border-radius: 0%;
@@ -1077,12 +1083,14 @@ img {
 	margin-top: 20px;
 	height: 38px;
 	margin-bottom: 5px;
+	border: solid black 1px;
 	}
 
 	#camera-choice {
 	width: 250px;
 	height: 38px;
 	margin-bottom: 5px;
+	border: solid black 1px;
 	}
 	.mGlassPic {
 	border-radius: 0%;
