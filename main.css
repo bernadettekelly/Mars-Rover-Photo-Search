@@ -445,6 +445,7 @@ img {
 	.modal-content {
 		width: 65%;
 		padding: 35px;
+		margin-top: 23px;
 	}
 	#photo-search {
 	margin-left: 0%;
